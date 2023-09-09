@@ -1,0 +1,21 @@
+.search {
+   position: relative;
+   width: 100%;
+   
+
+   >svg {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 15px;
+      width: 17px;
+      height: 17px;
+   
+   }
+   >input {
+      padding: 8px 8px 8px 41px;
+      border-radius: 15px; 
+      border: 1px solid #fff;
+      width: 100%;
+   }
+}

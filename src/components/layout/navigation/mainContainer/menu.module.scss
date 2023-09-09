@@ -1,0 +1,64 @@
+.menus {
+   display: grid;
+   gap: 50px;
+}
+
+
+.subtitle{
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+}
+
+.list {
+   display: grid;
+   gap: 20px
+}
+
+.item {
+ 
+  
+}
+
+.link {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: rgb(189, 189, 189);
+   transition:color .3s, font-weight .3s, svg .3s ;
+
+   &:hover {
+      color:  #fff;
+       font-weight: 500;
+       svg {
+         color: red;
+      }
+   }
+   
+ 
+}
+
+
+
+
+.active { 
+   color:  #fff;
+   font-weight: 500;
+
+   svg {
+      color: red;
+   }
+
+   &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      height: 100%;
+      transform: translate(0, -50%);
+      width: 3px;
+      background-color: red;
+   }
+}

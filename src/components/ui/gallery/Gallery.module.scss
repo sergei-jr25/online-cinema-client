@@ -1,0 +1,43 @@
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   gap: 25px;
+}
+
+.item {
+   position: relative;
+   height: 250px;
+ 
+   text-align: center;
+}
+
+.image {
+   border-radius: 15px;
+   overflow: hidden;
+   object-fit: cover;
+}
+
+.wrap {
+  
+}
+
+.link {
+   position: relative;
+  height: 100%;
+   display: block;
+}
+
+.content {
+   position: relative;
+   z-index: 3;
+   margin-top: 20px;
+ 
+}
+
+.title {
+   font-weight: 600;
+}
+
+.subtitle {
+   font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.form {
+   max-width: 800px;
+   margin: 0px auto;
+   display: grid;
+   gap: 30px;
+}
+
+.items {
+   // display: flex;
+   // align-items: center;
+   // flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 25px;
+   justify-content: space-between;
+
+   &:first-child{
+      grid-template-columns: repeat(2,1fr);
+      align-items: start;
+   }
+}
+
+.media {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   row-gap: 40px;
+   column-gap: 20px;
+
+}
+
+.slug {
+   margin: 20px 0px 0px 0px;
+}

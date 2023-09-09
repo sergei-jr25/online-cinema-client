@@ -1,0 +1,29 @@
+.nav {
+   margin: 0px 0px 100px 0px;
+}
+
+.list {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   justify-content: center;
+}
+
+.item {
+  
+}
+.link {
+   transition: color 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+         padding: 0px 0px 5px 0px;
+         color: red;
+      }
+    }
+
+}
+
+.active {
+   color: red;
+
+}

@@ -1,0 +1,50 @@
+.auth {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   gap: 30px;
+}
+
+.form {
+ 
+}
+
+.field {
+   display: grid;
+   gap: 10px;
+
+}
+
+.fields {
+   display: grid;
+   gap: 10px;
+}
+
+.button {
+   cursor: pointer;
+   padding: 10px 15px;
+   background-color: rgb(180, 8, 8);
+   border: none;
+   transition: .3s background-color;
+   &:hover {
+      background-color: rgb(85, 5, 5);
+
+
+   }
+}
+
+.registr {
+   background-color: rgb(92, 4, 4);
+   &:hover {
+      background-color: rgb(59, 2, 2);
+
+
+   }
+
+}
+
+.buttons {
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(2,1fr);
+}

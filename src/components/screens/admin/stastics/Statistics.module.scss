@@ -1,0 +1,36 @@
+.statistics {
+  display: grid; 
+  grid-template-columns:  repeat(2, 1fr);
+  gap: 20px;
+  
+}
+
+.item {
+ 
+}
+
+.opened {
+  margin-bottom: 30px;
+}
+
+.block {
+  // width: 400px;
+  // height: 200px;
+  background-color: rgba(34, 32, 32, 0.507);
+  text-align: center;
+}
+
+.link {
+
+}
+
+.image {
+  object-fit: cover;
+
+}
+
+.wrap {
+  position: relative;
+  height:300px;
+  max-height: 300px;
+}

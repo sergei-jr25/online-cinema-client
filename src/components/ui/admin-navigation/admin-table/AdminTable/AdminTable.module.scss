@@ -1,0 +1,53 @@
+.adminTable {
+   
+}
+
+.tableItem {
+  display: flex;
+   grid-template-columns: 300px 100px 100px;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   overflow-x: auto;
+   background-color: rgba(255, 255, 255, 0.418);
+   padding: 5px 10px;
+   border-radius: 10px;
+}
+
+.tableValue{
+   flex: 0 0 25%;
+}
+
+
+
+.items {
+   display: grid;
+   gap: 20px;
+  
+}
+
+.header {
+   margin: 0px 0px 30px 0px;
+   display: grid;
+   align-items: center;
+   gap: 10px;
+   background-color: rgba(139, 9, 9, 0.418);
+   padding: 10px 10px;
+   border-radius: 10px;
+}
+
+.item {
+} 
+
+.grid2 {
+   grid-template-columns: 315px 300px 100px;
+
+}
+.grid3 {
+   grid-template-columns: 0.85fr 1fr;
+
+}
+
+.tableItem {
+   
+}

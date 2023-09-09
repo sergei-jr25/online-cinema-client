@@ -1,0 +1,39 @@
+
+.content {
+   position: absolute;
+   bottom: 25px;
+   left: 25px;
+   width: 1200px;
+}
+
+
+.list {
+   display: grid;
+   gap: 10px;
+ 
+}
+.items {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.info {
+   position: absolute;
+   right: 65px;
+   bottom: 25px;
+   display: grid; 
+   gap: 15px;
+}
+
+
+.rating {
+
+    display: flex;
+    align-items: center;
+    gap:8px;
+
+    svg {
+      color: rgb(251, 255, 0);
+    }
+}
