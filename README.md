@@ -25,9 +25,14 @@ Technology stack:
 - Js-cookie,
 - TypeScript
 
+Серверная часть по ссылке https://github.com/sergei-jr25/online-shop-client.git
+
 # Getting Started
 
 First, run the development server:
+
+Installation
+$ npm install
 
 ```bash
 npm run dev
