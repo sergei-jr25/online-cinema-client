@@ -22,6 +22,7 @@ Technology stack:
 - React Transition Group:
 - Sass Modules
 - Axios,
+- Js-cookie,
 - TypeScript
 
 # Getting Started
