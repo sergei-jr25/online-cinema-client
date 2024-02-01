@@ -27,15 +27,18 @@ Technology stack:
 
 Серверная часть по ссылке https://github.com/sergei-jr25/online-shop-client.git
 
-# Getting Started
 
-First, run the development server:
+
+
 
 #  Installation
+First, run the development server:
 
 ```bash
 $ npm install
 ```
+# Getting Started
+
 
 ```bash
 npm run dev
