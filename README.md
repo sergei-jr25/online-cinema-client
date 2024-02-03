@@ -32,7 +32,7 @@ Technology stack:
 
 
 #  Installation
-First, run the development server:
+ 
 
 ```bash
 $ npm install
