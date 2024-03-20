@@ -1,11 +1,15 @@
-.container {}
+.container {
+	display: grid;
+	gap: 40px;
+}
 
 .banner {
-   position: relative;
+	position: relative;
+	// margin: 0px 0px 40px 0px;
 }
 
 .rate {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

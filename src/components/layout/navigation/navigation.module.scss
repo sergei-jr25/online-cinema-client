@@ -1,0 +1,16 @@
+.navigation {
+	position: relative;
+	@media (max-width: 992px) {
+		order: 1;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 1px;
+		background-color: #ccc;
+	}
+}

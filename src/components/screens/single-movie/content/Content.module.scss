@@ -1,39 +1,58 @@
-
 .content {
-   position: absolute;
-   bottom: 25px;
-   left: 25px;
-   width: 1200px;
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	padding: 25px;
+	color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 4px 6px rgba(35, 35, 35, 2.1);
 }
-
-
+.title {
+	font-size: 45px;
+	font-weight: 800;
+	margin: 0px 0px 20px 0px;
+}
 .list {
-   display: grid;
-   gap: 10px;
- 
+	display: grid;
+	gap: 10px;
 }
 .items {
-   display: flex;
-   align-items: center;
-   gap: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	&_info {
+		margin: 0px 0px 15px 0px;
+		color: #fbfafc;
+	}
 }
 
 .info {
-   position: absolute;
-   right: 65px;
-   bottom: 25px;
-   display: grid; 
-   gap: 15px;
+	position: absolute;
+	right: 65px;
+	bottom: 25px;
+	display: grid;
+	gap: 15px;
 }
 
-
 .rating {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	position: absolute;
 
-    display: flex;
-    align-items: center;
-    gap:8px;
+	bottom: 25px;
+	right: 25px;
 
-    svg {
-      color: rgb(251, 255, 0);
-    }
+	svg {
+		color: rgb(251, 255, 0);
+	}
+}
+
+.favorite {
+	position: absolute;
+
+	bottom: 75px;
+	right: 25px;
 }

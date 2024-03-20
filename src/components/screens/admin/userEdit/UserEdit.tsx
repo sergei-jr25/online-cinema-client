@@ -3,8 +3,9 @@ import { useRouter } from 'next/router'
 import { FC } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
-import Button from '@/utils/form-elemtns/Button'
-import Heading from '@/utils/heading/Heading'
+import Button from '@/components/ui/form-elements/Button'
+import Heading from '@/components/ui/heading/Heading'
+
 import Meta from '@/utils/meta/Meta'
 
 import { getAdminUrl } from '@/config/url.config'
@@ -17,7 +18,7 @@ import stylesUser from './UserEdit.module.scss'
 import { useGenreEdit } from './useUserEdit'
 
 const DynamicTextEditor = dynamic(
-	() => import('@/utils/form-elemtns/TextEditor'),
+	() => import('@/components/ui/form-elements/TextEditor'),
 	{
 		ssr: false
 	}

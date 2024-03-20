@@ -1,0 +1,36 @@
+.search {
+	position: relative;
+	z-index: 23;
+	width: 100%;
+
+	&__input {
+		padding: 8px 8px 8px 41px;
+		border-radius: 15px;
+		border: 1px solid #555151;
+		width: 100%;
+		background-color: #2b2a33;
+		color: #eee;
+
+		::placeholder {
+			color: #787878;
+		}
+
+		&:focus {
+			border: 1px solid #524f4f;
+			outline: none;
+		}
+		&:active {
+			border: 1px solid #524f4f;
+		}
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		left: 15px;
+		width: 22px;
+		height: 22px;
+		fill: #787878;
+	}
+}

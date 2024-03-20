@@ -1,0 +1,49 @@
+.field {
+	display: grid;
+	gap: 10px;
+
+	&__placeholder {
+		color: #777;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin: 0px 0px 8px 0px;
+	}
+
+	&__input {
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		color: #b3b0b6;
+		padding: 0px 0px 6px 0px;
+		border: none;
+		background-color: transparent;
+		font-size: 14px;
+		border-bottom: 1px solid #777;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}
+
+.button {
+	justify-self: start;
+	text-align: center;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background-color: red;
+	color: #fff;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.3s, background-color 0.3s;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: rgb(172, 3, 3);
+	}
+}

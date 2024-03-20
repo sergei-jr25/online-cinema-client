@@ -1,12 +1,16 @@
 .container {
-   display: grid;
-   gap: 30px;
+	display: grid;
+	gap: 30px;
+	@media (max-width: 992px) {
+		display: none;
+	}
 }
-
 
 .items {
-   display: grid;
-   gap: 15px;
+	display: grid;
+	gap: 25px;
 }
 
-
+.title {
+	margin: 0px 0px 20px 0px;
+}

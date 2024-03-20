@@ -1,35 +1,31 @@
 .arrow {
-   position: absolute;
-   background-color: rgb(179, 171, 171);
-   padding: 10px;
-   border: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: background-color .3s;
-   cursor: pointer;
-   border-radius: 50%;
-   svg {
-      transition: font-size .3s;
-      font-size: 22px;
-   }
+	position: absolute;
+	background-color: rgba(179, 171, 171, 0.404);
+	padding: 8px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s;
+	cursor: pointer;
+	border-radius: 50%;
+	svg {
+		transition: font-size 0.3s;
+		font-size: 22px;
+	}
 
-   &:hover {
-      background-color: rgb(224, 15, 15);
-      svg {
-         font-size: 27px;
-      }
-
-   }
-
-  
+	&:hover {
+		background-color: rgb(224, 15, 15);
+		svg {
+			font-size: 27px;
+		}
+	}
 }
 
 .letf {
-left: 0;
+	left: 0;
 }
 
 .right {
-   right: 0;
+	right: 0;
 }
-

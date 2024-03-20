@@ -1,4 +1,14 @@
-// .saibar {
-//    display: grid;
-//    gap: 20px;
-// }
+.saibar {
+	position: relative;
+
+	display: grid;
+	gap: 50px;
+	align-self: start;
+
+	@media (max-width: 992px) {
+		order: 2;
+	}
+
+	&__item {
+	}
+}

@@ -1,9 +1,13 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
-const MoviesNoAuth:FC = () => {
-  return (
-    <div>for viewing favorite pls authrorizatione</div>
-  )
+import styles from './Movies.module.scss'
+
+const MoviesNoAuth: FC = () => {
+	return (
+		<div className={styles.moviesAuth}>
+			for viewing favorite pls authrorizatione
+		</div>
+	)
 }
 
 export default MoviesNoAuth

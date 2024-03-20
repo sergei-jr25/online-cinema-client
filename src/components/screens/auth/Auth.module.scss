@@ -1,50 +1,53 @@
 .auth {
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   gap: 30px;
+	background-color: #121212;
+
+	margin: 0px auto;
+	padding: 15pxpx;
+	border-radius: 15px;
+	padding: 15px;
+	@media (min-width: 767px) {
+		width: 400px;
+		padding: 30px;
+	}
+	&__title {
+		text-align: center;
+	}
 }
 
 .form {
- 
-}
-
-.field {
-   display: grid;
-   gap: 10px;
-
+	display: grid;
+	gap: 30px;
 }
 
 .fields {
-   display: grid;
-   gap: 10px;
+	display: grid;
+	gap: 20px;
 }
 
 .button {
-   cursor: pointer;
-   padding: 10px 15px;
-   background-color: rgb(180, 8, 8);
-   border: none;
-   transition: .3s background-color;
-   &:hover {
-      background-color: rgb(85, 5, 5);
-
-
-   }
+	cursor: pointer;
+	padding: 10px 15px;
+	background-color: transparent;
+	border: none;
+	transition: 0.3s background-color;
+	&:hover {
+		background-color: rgb(85, 5, 5);
+	}
 }
 
 .registr {
-   background-color: rgb(92, 4, 4);
-   &:hover {
-      background-color: rgb(59, 2, 2);
-
-
-   }
-
+	background-color: rgb(92, 4, 4);
+	&:hover {
+		background-color: rgb(59, 2, 2);
+	}
 }
 
 .buttons {
-   display: grid;
-   gap: 10px;
-   grid-template-columns: repeat(2,1fr);
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.input {
+	background-color: red;
 }

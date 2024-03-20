@@ -1,44 +1,41 @@
 .list {
-   display: grid;
-   gap: 20px;
+	display: grid;
+	gap: 20px;
 }
 
 .link {
-   position: relative;
-   display: flex;
-   align-items: center;
-   gap: 10px;
-   color: rgb(189, 189, 189);
-   transition:color .3s, font-weight .3s, svg .3s ;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: rgb(189, 189, 189);
+	transition: color 0.3s, font-weight 0.3s, svg 0.3s;
 
-   &:hover {
-      color:  #fff;
-       font-weight: 500;
-       svg {
-         color: red;
-      }
-   }
-   
+	&:hover {
+		color: #fff;
+		font-weight: 500;
+		svg {
+			color: red;
+		}
+	}
 }
 
+.active {
+	color: #fff;
+	font-weight: 500;
 
+	svg {
+		color: red;
+	}
 
-.active { 
-   color:  #fff;
-   font-weight: 500;
-
-   svg {
-      color: red;
-   }
-
-   &:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      height: 100%;
-      transform: translate(0, -50%);
-      width: 3px;
-      background-color: red;
-   }
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		height: 100%;
+		transform: translate(0, -50%);
+		width: 3px;
+		background-color: red;
+	}
 }

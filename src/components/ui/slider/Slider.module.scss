@@ -1,64 +1,82 @@
 .container {
-   position: relative;
-
+	position: relative;
 }
-
 
 .arrows {
-   position: absolute;
-   z-index: 4;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   top: 50%;
-   width: 100%;
-   transform: translate(0, -50%);
-   gap: 20px;
+	position: absolute;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 50%;
+	width: 100%;
+	transform: translate(0, -50%);
+	gap: 20px;
 }
 
-
-
 .image {
-   
-   object-fit: cover;
-   height: 250px;
-   border-radius: 15px;
-   overflow: hidden;
+	object-fit: cover;
+	height: 250px;
+	border-radius: 15px;
+	overflow: hidden;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	&::before {
+		content: '';
+
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgb(9, 6, 6);
+		background: linear-gradient(
+			90deg,
+			rgba(9, 6, 6, 0.9640231092436975) 9%,
+			rgba(8, 5, 5, 0.6166841736694677) 36%,
+			rgba(8, 5, 5, 0.1292892156862745) 69%
+		);
+	}
 }
 
 .content {
-   position: relative;
-   z-index: 2;
-   display: grid;
-   gap: 10px;
-   padding: 15px;
+	position: relative;
+	z-index: 2;
+	display: grid;
+	gap: 10px;
+	padding: 15px;
 }
 
 .title {
-   font-size: 28px;
-   font-weight: 700;
+	font-size: 28px;
+	font-weight: 700;
 }
 
 .subtitle {
-   font-size: 18px;
+	font-size: 18px;
 }
 
 .button {
-   justify-self: start;
-   text-align: center;
-   padding: 10px 25px;
-   border-radius: 10px;
-   background-color: red;
-   color: #fff;
-   border: none;
-   font-weight: 600;
-   cursor: pointer;
-   transition: transform .3s, background-color .3s ;
+	justify-self: start;
+	text-align: center;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background-color: red;
+	color: #fff;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.3s, background-color 0.3s;
 
-   &:hover {
-      transform: scale(1.1);
-      background-color: rgb(172, 3, 3);
-
-   }
-
+	&:hover {
+		transform: scale(1.1);
+		background-color: rgb(172, 3, 3);
+	}
 }

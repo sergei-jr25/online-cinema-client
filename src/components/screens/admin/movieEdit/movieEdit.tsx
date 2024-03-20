@@ -1,23 +1,22 @@
+import Button from '@/components/ui/form-elements/Button'
+import SlugField from '@/components/ui/form-elements/slugField/SlugField'
 import UploadField from '@/components/ui/form-elements/uploadField/UploadField'
-import SelectPage from '@/components/ui/select/Select'
+import Heading from '@/components/ui/heading/Heading'
+import SkeletonsLoading from '@/components/ui/skeletonsLoading/SkeletonsLoading'
 import Field from '@/utils/form-elemtns/Field'
-import SlugField from '@/utils/form-elemtns/slugField/SlugField'
- import Heading from '@/utils/heading/Heading'
 import Meta from '@/utils/meta/Meta'
-import SkeletonsLoading from '@/utils/skeletonsLoading/SkeletonsLoading'
 import { generateSlug } from '@/utils/string/generateSlug'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import {FC} from 'react' 
+import { FC } from 'react'
 import { Controller, useForm } from 'react-hook-form'
-import Skeleton from 'react-loading-skeleton'
 import { stripHtml } from 'string-strip-html'
-import {  ImovieEdit } from './movieEdit.interface'
+import { ImovieEdit } from './movieEdit.interface'
 import { useAdminAcotr } from './useAdminActor'
 import { useAdminGenre } from './useAdminGenre'
 import { useMovieEdit } from './useMovieEdit'
-import Button from '@/utils/form-elemtns/Button'
-import { getAdminUrl } from '@/config/url.config'
+import { getAdminUr } from / Fieldfig/
+'
 // import styles from './movieEdit.module.scss'
 import styles from '../Admin.module.scss'
 
@@ -26,7 +25,7 @@ const DynamicSelect = dynamic(() => import('@/components/ui/select/Select'), {
    ssr: false
 })
 
-const DynamicTextEditor = dynamic(() => import('@/utils/form-elemtns/TextEditor'), {
+const DynamicTextEditor = dynamic(() => import('@/components/ui/form-elements/TextEditor'), {
    ssr: false
 })
 

@@ -1,19 +1,23 @@
-import Button from '@/utils/form-elemtns/Button'
-import React, { FC } from 'react'
+import { useRouter } from 'next/router'
+import { FC } from 'react'
+
+import Button from '@/components/ui/form-elements/Button'
+
+import styles from './Movies.module.scss'
 import MoviesItem from './movieItem/MovieItem'
 import { IMoviesList } from './movies-list.interfice'
-import styles from './Movies.module.scss'
 
-const MoviesList:FC<IMoviesList> = ({link,movies,title}) => {
-  return (
-    <div className={styles.items }>
-        <h2>{title }</h2>
-      {movies.slice(0, 3).map(movie => <MoviesItem movie={movie} key={movie._id} />)}
-      <Button> See more </Button>
-
-    </div>
-  )
+const MoviesList: FC<IMoviesList> = ({ link, movies, title }) => {
+	const { push } = useRouter()
+	return (
+		<div className={styles.items}>
+			<h2 className={styles.title}>{title}</h2>
+			{movies.slice(0, 3).map(movie => (
+				<MoviesItem movie={movie} key={movie._id} />
+			))}
+			<Button onClick={() => push(link)}> See more </Button>
+		</div>
+	)
 }
-
 
 export default MoviesList

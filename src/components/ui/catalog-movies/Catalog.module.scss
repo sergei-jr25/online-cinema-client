@@ -1,14 +1,15 @@
 .heading {
-   margin: 0px 0px 50px 0px;
+	margin: 0px 0px 50px 0px;
 }
 
 .movies {
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	@media (max-width: 992px) {
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	}
 }
 
-
 .movie {
-
 }
