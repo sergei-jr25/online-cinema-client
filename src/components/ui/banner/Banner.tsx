@@ -9,9 +9,10 @@ interface IBanner {
 }
 
 const Banner: FC<IBanner> = ({ image, Detail }) => {
+	console.log('image', image)
+
 	return (
 		<div className={styles.banner}>
-			{image}
 			<Image fill src={image} priority unoptimized alt='' />
 			{Detail && <Detail />}
 		</div>

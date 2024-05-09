@@ -19,7 +19,6 @@ export default GenresPage
 export async function getStaticProps() {
 	try {
 		const { data: collections } = await genreService.getCollection()
-		console.log(collections)
 
 		return {
 			props: {

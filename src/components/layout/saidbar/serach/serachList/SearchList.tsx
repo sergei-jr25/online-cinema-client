@@ -13,7 +13,6 @@ const SearchList: FC<{ movies: IMovies[]; search: string }> = ({
 	search
 }) => {
 	const ref = useRef()
-	console.log(ref.current)
 
 	// useEffect(() => {
 	// 	if (!!search) {

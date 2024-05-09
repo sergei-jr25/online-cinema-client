@@ -1,16 +1,9 @@
 import { getUsersUrl } from '@/config/api.config'
-import axios from "@/api/http"
 
+import axios from '@/api/http'
 
 export const AdminService = {
-
-   async getCountsUsers() {
-      console.log(axios);
-      
-     return axios.get<number>(getUsersUrl('count'))
-   },
-
-  
+	async getCountsUsers() {
+		return axios.get<number>(getUsersUrl('count'))
+	}
 }
-
- 

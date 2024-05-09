@@ -1,12 +1,16 @@
+import { NextPage } from 'next'
+
 import Home from '@/components/screens/home/Home'
 import { IHome } from '@/components/screens/home/home.interface'
 import { IGalleryItem } from '@/components/ui/gallery/gallery.interface'
 import { ISlide } from '@/components/ui/slider/slider.interface'
-import { getActorUrl, getMovieUrl } from '@/config/url.config'
+
 import { ActorService } from '@/services/ActorService'
 import { moviesService } from '@/services/moviesSerive'
+
 import { getGenresList } from '@/utils/movies/getGenresListEach'
-import { NextPage } from 'next'
+
+import { getActorUrl, getMovieUrl } from '@/config/url.config'
 
 const index: NextPage<IHome> = ({ slides, actors, trendingMovies }) => {
 	return (

@@ -6,7 +6,6 @@ import { useSearch } from './useSearch'
 
 const Search = () => {
 	const { isSuccess, serachHandle, search, data } = useSearch()
-	console.log('data', data)
 
 	return (
 		<div className={styles.search}>

@@ -18,11 +18,7 @@ const UploadField: FC<IUploadFiles> = (
 
 	const videoRef = useRef<IVideoElement>(null)
 
-	console.log(value, 'value')
-
 	const handleClick = (e: ChangeEvent<HTMLInputElement>) => {
-		console.log(e.target.files)
-
 		uploadFiel(e)
 	}
 

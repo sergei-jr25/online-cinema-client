@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { FC, useEffect, useState } from 'react'
 
 import Menu from './Menu'
@@ -9,6 +10,9 @@ import styles from './menu.module.scss'
 const MenuContainer: FC = () => {
 	const [firstMenu, userMenu] = menus
 	const [isOpenMenu, setIsOpenMenu] = useState(false)
+
+	const router = useRouter()
+
 	useEffect(() => {
 		if (isOpenMenu) {
 			document.body.classList.add('menu-open') // Добавить класс к body
@@ -16,6 +20,10 @@ const MenuContainer: FC = () => {
 			document.body.classList.remove('menu-open') // Удалить класс из body
 		}
 	}, [isOpenMenu])
+
+	useEffect(() => {
+		setIsOpenMenu(false)
+	}, [router])
 
 	return (
 		<div className={styles.menu}>

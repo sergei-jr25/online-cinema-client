@@ -5,8 +5,6 @@ import { IField } from './form.interface'
 
 const Field = forwardRef<HTMLInputElement, IField>(
 	({ placeholder, error, type = 'text', ...rest }, ref) => {
-		console.log('rest', rest)
-
 		return (
 			<>
 				<label className={styles.field}>

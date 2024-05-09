@@ -12,6 +12,8 @@ import styles from './Catalog.module.scss'
 import { ICatallog } from './catalog.interface'
 
 const Catalog: FC<ICatallog> = ({ movies, title, description }) => {
+	console.log('movies', movies)
+
 	return (
 		<Meta title={title}>
 			<div className={styles.heading}>

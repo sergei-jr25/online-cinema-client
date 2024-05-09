@@ -1,8 +1,13 @@
 .navigation {
 	position: relative;
 	@media (max-width: 992px) {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 40px 80px;
+		gap: 15px;
 		order: 1;
 	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -12,5 +17,31 @@
 		height: 100%;
 		width: 1px;
 		background-color: #ccc;
+		@media (max-width: 992px) {
+			display: none;
+		}
+	}
+}
+
+.logo {
+	width: 120px;
+	height: 60px;
+
+	@media (max-width: 980px) {
+		order: 2;
+		position: relative;
+		z-index: 50;
+		height: 50px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	@media (max-width: 486px) {
+		display: none;
+	}
+
+	@media (min-width: 980px) {
+		margin: 0px 0px 40px 0px;
 	}
 }

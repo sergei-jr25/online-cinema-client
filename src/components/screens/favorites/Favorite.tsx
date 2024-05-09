@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 
 import Heading from '@/components/ui/heading/Heading'
 import SceletonsLoading from '@/components/ui/skeletonsLoading/SkeletonsLoading'
@@ -18,9 +18,11 @@ const Favorite: FC = () => {
 	const { user } = useAuth()
 	const { replace } = useRouter()
 
-	if (!user) {
-		replace('/auth')
-	}
+	useEffect(() => {
+		if (!user) {
+			replace('/auth')
+		}
+	}, [user])
 
 	return (
 		<Meta title='Favorites'>

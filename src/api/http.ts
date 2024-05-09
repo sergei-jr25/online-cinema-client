@@ -9,16 +9,11 @@ import { API_URL, APP_SERVER_URL } from '@/config/api.config'
 import { errorCatch, getContentType } from './api.helper'
 import { IS_PRODUCTION } from '@/providers/consts'
 
-console.log('API_URL', API_URL)
-console.log('APP_SERVER_URL', APP_SERVER_URL)
-
 export const http = axios.create({
 	baseURL: IS_PRODUCTION ? APP_SERVER_URL : API_URL,
 	// baseURL:  APP_SERVER_URL  ,
 	headers: getContentType()
 })
-
-console.log(API_URL)
 
 export const instance = axios.create({
 	baseURL: IS_PRODUCTION ? APP_SERVER_URL : API_URL,

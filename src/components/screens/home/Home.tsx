@@ -18,11 +18,9 @@ const Home: FC<IHome> = ({ slides, actors, trendingMovies }) => {
 		480: {
 			slidesPerView: 2.3
 		},
-		// когда ширина экрана меньше 1024px, отображать 3 слайда
 		1024: {
 			slidesPerView: 4
 		},
-		// когда ширина экрана меньше 1440px, отображать 4.5 слайда (как в изначальном коде)
 		1440: {
 			slidesPerView: 4.5
 		}
@@ -35,15 +33,16 @@ const Home: FC<IHome> = ({ slides, actors, trendingMovies }) => {
 			slidesPerView: 2.3
 		},
 
-		// когда ширина экрана меньше 1024px, отображать 3 слайда
 		1024: {
 			slidesPerView: 4
 		},
-		// когда ширина экрана меньше 1440px, отображать 4.5 слайда (как в изначальном коде)
 		1440: {
 			slidesPerView: 7
 		}
 	}
+
+	console.log('slides', slides)
+
 	return (
 		<Meta
 			title='Watch movies online'
@@ -56,17 +55,12 @@ const Home: FC<IHome> = ({ slides, actors, trendingMovies }) => {
 						<Slider slides={slides} buttonTitle='Watch' />
 					</div>
 				)}
+
 				<div className={styles.trending}>
 					<h2 className={styles.title}>Trending now</h2>
 					{trendingMovies.length && (
 						<div className={styles.items}>
-							<Swiper
-								spaceBetween={20}
-								// slidesPerView={4.5}
-								onSlideChange={() => console.log('slide change')}
-								onSwiper={swiper => console.log(swiper)}
-								breakpoints={breakPointsTrending}
-							>
+							<Swiper spaceBetween={20} breakpoints={breakPointsTrending}>
 								{trendingMovies.map(item => (
 									<SwiperSlide>
 										<GalleryItem
@@ -86,12 +80,7 @@ const Home: FC<IHome> = ({ slides, actors, trendingMovies }) => {
 					<h2 className={styles.title}>Best actors</h2>
 					{actors.length && (
 						<div className={styles.items}>
-							<Swiper
-								spaceBetween={20}
-								onSlideChange={() => console.log('slide change')}
-								onSwiper={swiper => console.log(swiper)}
-								breakpoints={breakPointsActors}
-							>
+							<Swiper spaceBetween={20} breakpoints={breakPointsActors}>
 								{actors.map(item => (
 									<SwiperSlide>
 										<GalleryItem

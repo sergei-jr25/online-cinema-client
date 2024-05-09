@@ -17,7 +17,7 @@ const ActorPage: NextPage<IActorPage> = ({ movies, actor }) => {
 			{actor ? (
 				<>
 					<Catalog movies={movies || []} title='Actor movie' />
-					<h1>ACTOR MOVIE</h1>
+			 
 				</>
 			) : (
 				<Error404 />

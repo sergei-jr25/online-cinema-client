@@ -23,6 +23,8 @@ const SingleMovie: FC<IMoviePage> = ({ movie, similarMovies }) => {
 	const movieSlug = String(movie?.slug)
 	useUpdateCountMovies(movieSlug)
 
+	console.log('movie', movie)
+
 	return (
 		<>
 			{movie && (

@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 import Button from '@/components/ui/form-elements/Button'
 import Heading from '@/components/ui/heading/Heading'
+import SceletonsLoading from '@/components/ui/skeletonsLoading/SkeletonsLoading'
 
 import { useActions } from '@/hooks/useActions'
 import { useAuth } from '@/hooks/useAuth'
@@ -44,11 +45,19 @@ const Auth: FC = () => {
 			<div className={styles.auth}>
 				<Heading title='Auth' className={styles.auth__title} />
 				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-					<AuthFields
-						formState={formState}
-						register={registerInput}
-						isPasswordReqierd
-					/>
+					{isLoading ? (
+						<>
+							<SceletonsLoading />
+							<SceletonsLoading />
+							<SceletonsLoading />
+						</>
+					) : (
+						<AuthFields
+							formState={formState}
+							register={registerInput}
+							isPasswordReqierd
+						/>
+					)}
 
 					<div className={styles.buttons}>
 						<Button

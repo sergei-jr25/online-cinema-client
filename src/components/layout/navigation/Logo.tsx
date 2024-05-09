@@ -1,12 +1,16 @@
-import React, { FC } from 'react'
-import logoImage from '@/assets/images/logo.svg'
 import Image from 'next/image'
-const Logo:FC = () => {
-  return (
-     <div>
-        <Image src={logoImage} width={250} height={30} alt={'logotype'} />
-    </div>
-  )
+import { FC } from 'react'
+
+import logoImage from '@/assets/images/logo.png'
+
+import styles from './navigation.module.scss'
+
+const Logo: FC = () => {
+	return (
+		<div className={styles.logo}>
+			<Image src={logoImage} alt={'logotype'} />
+		</div>
+	)
 }
 
 export default Logo
