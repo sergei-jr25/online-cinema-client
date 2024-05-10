@@ -12,6 +12,8 @@ const Meta: FC<IMeta> = ({ title, decription, image, children }) => {
 	const { asPath } = useRouter()
 	const currentUrl = 'http://localhost:3000/api' + asPath
 
+	console.log('LogoImage', LogoImage)
+
 	return (
 		<>
 			<Head>
@@ -26,7 +28,7 @@ const Meta: FC<IMeta> = ({ title, decription, image, children }) => {
 						<link rel='canonical' href={currentUrl} />
 						<meta property='og:locale' content='en' />
 						<meta property='og:title' content={title} />
-						<meta property='og:image' content={image || LogoImage} />
+						<meta property='og:image' content={image || LogoImage.src} />
 						<meta property='og:site_name' content={siteName} />
 
 						<meta property='og:description' content={decription} />
