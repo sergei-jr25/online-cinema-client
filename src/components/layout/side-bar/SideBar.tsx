@@ -1,10 +1,10 @@
 import { FC } from 'react'
 
-import styles from './Saidbar.module.scss'
+import styles from './SideBar.module.scss'
 import MoviesContainer from './moviesContainer/MoviesContainer'
 import Search from './serach/Search'
 
-const Saidbar: FC = () => {
+const SideBar: FC = () => {
 	return (
 		<div className={styles.saibar}>
 			<Search />
@@ -13,4 +13,4 @@ const Saidbar: FC = () => {
 	)
 }
 
-export default Saidbar
+export default SideBar

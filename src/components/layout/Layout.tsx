@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { ILayout } from './layout.interface'
 import styles from './layout.module.scss'
 import Navigation from './navigation/Navigation'
-import Saidbar from './saidbar/Saidbar'
+import SideBar from './side-bar/SideBar'
 
 const Layout: FC<ILayout> = ({ children }) => {
 	return (
@@ -11,7 +11,7 @@ const Layout: FC<ILayout> = ({ children }) => {
 			<div className={styles.layout__container}>
 				<Navigation />
 				<div className={styles.layout__body}>{children}</div>
-				<Saidbar />
+				<SideBar />
 			</div>
 		</div>
 	)
